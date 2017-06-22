@@ -1,16 +1,19 @@
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
 .navbar-style{
-    color: white;
-    background:#0C098F;
+    color: yellow;
+    background:#2A3E64;
 
 }
 .navbar-light .navbar-nav .nav-link {
-    color:white;
+    color:yellow;
 }
 .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
-    color: rgba(255,255,255,1);
+    color: yellow;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
-    color: rgba(255,255,255,1);
+    color: yellow;
 }
 .fullscreen-bg{
     position: fixed;
@@ -25,8 +28,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 @media(min-aspect-ratio:16/9){
     .fullscreen-bg__video{
@@ -37,14 +40,27 @@
 @media (max-aspect-ratio: 16/9){
     .fullscreen-bg__video{
         width: auto;
-        height: 80%;
+        height: 100%;
     }
 }
 .h1-1{
-    color: white;
+    color: yellow;
+    text-shadow: -3px 0 black,
+                3px 0 black,
+                0 3px black,
+                0 -3px black;
+}
+.img_carousel{
+    height: 500px;
+    min-height: 500px;
+}
+.bg-inverse {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.carousel-caption {
+    color: yellow;
     text-shadow: -1px 0 black,
                 1px 0 black,
                 0 1px black,
                 0 -1px black;
-    font-family: "Times New Roman", Times, serif;
 }

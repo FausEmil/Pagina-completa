@@ -9,38 +9,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    
+
 </head>
 
 <body>
     <!--facebook-->
     <script>
-        window.fbAsyncInit = function (){
+        window.fbAsyncInit = function () {
             FB.init({
                 appId: '1488871041172437',
                 cookie: true,
                 xfbml: true,
                 version: 'v2.8'
             });
-           $(".fb_login").click(function() {
-                   FB.login(Facebook_login);
-                }); 
+            $(".fb_login").click(function () {
+                FB.login(Facebook_login);
+            });
         };
-        (function (d, s, id){
+        (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) { return; }
             js = d.createElement(s); js.id = id;
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        function Facebook_login () {
-            FB.getLoginStatus(function(response) {
+        function Facebook_login() {
+            FB.getLoginStatus(function (response) {
                 if (response.status === 'connected') {
                     window.location = "THE URL TO PROCESS THE LOGIN";
 
                 }
             });
-          } 
+        }
     </script>
     <!--navbar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-style">
@@ -74,7 +74,7 @@
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Sign in |</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal2">Sign up</a>
                 </li>
             </ul>
         </div>
@@ -249,7 +249,7 @@
             </div>
         </div>
     </section>
-    <!--Este es el modal-->
+    <!--Este es el modal para sign in-->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -270,10 +270,10 @@
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                        
-                            <fb:login-button scope="public_profile,email" onlogin"checklLoginState();">
-                            </fb:login-button>
-                        
+
+                        <fb:login-button scope="public_profile,email" onlogin "checklLoginState();">
+                        </fb:login-button>
+
                         <button type="submit" class="btn btn-primary">Sign in</button>
                     </form>
 
@@ -283,5 +283,56 @@
             </div>
         </div>
     </div>
+    <!--Este es el modal para sign up-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Gamerholics</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">Please enter a valid mail.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Username</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                            <small id="emailHelp" class="form-text text-muted">This can not be change later.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputId">Id</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Id">
+                            <small id="emailHelp" class="form-text text-muted">The id is the name that we will show to the others. It can be changed.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Repeat Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                                    Accept Terms and uses.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -10,6 +10,19 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+        
+
 </head>
 
 <body>
@@ -97,7 +110,12 @@
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <h1 class="h1-1"> Bienvenido, esta semana hablaremos de Rainbow Six Siege</h1>
+                    <h1 class="h1-1"> Gamerholics</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h3 class="h2-1">Tu pagina de noticias gamers y mas.
                 </div>
             </div>
         </div>
@@ -184,7 +202,7 @@
     <section class="sc2-background">
         <div class="container">
             <div class="row fin-color">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h3 class="h3-title">Juegos</h3>
                     <ul>
                         <li><a class="as2-color" href="/battlefield/">Battlefield</a></li>
@@ -202,6 +220,10 @@
                         <li>Injustice</li>
                         <li>League of Legends</li>
                         <li>Mario Kart 8</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="mrg-juegos">
                         <li>Overwatch</li>
                         <li>Paladins</li>
                         <li>Rainbow Six: Siege</li>
@@ -216,8 +238,8 @@
                         <li>World of Tanks</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h4>Regions</h4>
+                <div class="col-md-2">
+                    <h4 class="h3-title">Regions</h4>
                     <ul>
                         <li>Global</li>
                         <li>America</li>
@@ -226,8 +248,8 @@
                         <li>United Kingdom</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h4>Social</h4>
+                <div class="col-md-2">
+                    <h4 class="h3-title">Social</h4>
                     <ul>
                         <li>Facebook</li>
                         <li>Steam</li>
@@ -237,7 +259,7 @@
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h5>About us</h5>
+                    <h5 class="h3-title">About us</h5>
                     <ul>
                         <li>Anticheats</li>
                         <li>Career</li>
@@ -318,6 +340,29 @@
                             <label for="exampleInputPassword2">Repeat Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputAge">Edad</label>
+                            <div class="container">
+                                <div class="row">
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker5'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker5').datetimepicker({
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-check">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
@@ -333,6 +378,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

@@ -2,18 +2,18 @@ html,body{
     font-family: 'Roboto', sans-serif;
 }
 .navbar-style{
-    color: yellow;
+    color: #ffffff;
     background:#2A3E64;
 
 }
 .navbar-light .navbar-nav .nav-link {
-    color:yellow;
+    color:#ffffff;
 }
 .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
-    color: yellow;
+    color: #ffffff;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
-    color: yellow;
+    color: #ffffff;
 }
 .fullscreen-bg{
     position: fixed;
@@ -44,11 +44,18 @@ html,body{
     }
 }
 .h1-1{
-    color: yellow;
+    color: #ffffff;
     text-shadow: -2px 0 black,
                 2px 0 black,
                 0 2px black,
                 0 -2px black;
+}
+.h2-1{
+    color: #ffffff;
+    text-shadow: -1px 0 black,
+                1px 0 black,
+                0 1px black,
+                0 -1px black;
 }
 .img_carousel{
     height: 500px;
@@ -58,7 +65,7 @@ html,body{
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 .carousel-caption {
-    color: yellow;
+    color: #ffffff;
     text-shadow: -1px 0 black,
                 1px 0 black,
                 0 1px black,
@@ -68,7 +75,7 @@ html,body{
     margin-top: 60px;
 }
 .p_sec1{
-    color: #FFC76D;
+    color: #ffffff;
     text-shadow: -1px 0 black,
                 1px 0 black,
                 0 1px black,
@@ -85,4 +92,7 @@ html,body{
 }
 .as2-color{
     color: white;
+}
+.mrg-juegos{
+    padding-top: 40px;
 }

@@ -96,3 +96,21 @@ html,body{
 .mrg-juegos{
     padding-top: 40px;
 }
+.container-fluid {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.ul-flootr{
+    float: right !important;
+}
+
+
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text {
+  fill: #fff;
+  font: 10px sans-serif;
+}
+

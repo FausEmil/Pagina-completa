@@ -1,0 +1,75 @@
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-style{
+    color: #ffffff;
+    background:#2A3E64;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color:#ffffff;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color: #ffffff;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+    color: #ffffff;
+}
+
+.h1-1{
+    color: #ffffff;
+    text-shadow: -2px 0 black,
+                2px 0 black,
+                0 2px black,
+                0 -2px black;
+}
+.h2-1{
+    color: #ffffff;
+    text-shadow: -1px 0 black,
+                1px 0 black,
+                0 1px black,
+                0 -1px black;
+}
+.sect_style{
+    margin-top: 60px;
+}
+.p_sec1{
+    color: #ffffff;
+    text-shadow: -1px 0 black,
+                1px 0 black,
+                0 1px black,
+                0 -1px black;
+}
+.h3-title{
+    margin-left: 20px;
+}
+.fin-color{
+    color: white;
+}
+.sc2-background{
+    background-color: rgba(50, 60, 100, 0.9);
+}
+.as2-color{
+    color: white;
+}
+.mrg-juegos{
+    padding-top: 40px;
+}
+.container-fluid {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.ul-flootr{
+    float: right !important;
+}
+
+
+.bar rect {
+  fill: steelblue;
+}
+
+.bar text {
+  fill: #fff;
+  font: 10px sans-serif;
+}
+

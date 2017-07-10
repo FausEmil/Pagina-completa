@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style_Store.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -101,72 +102,98 @@
             </div>
         </div>
     </nav>
-    <!--Titulo-->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <div class="fullscreen-bg">
-                                <video loop muted autoplay class="fullscreen-bg__video">
-                                    <source src="vid/Pp_Bg.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
+    <!--Barra de productos-->
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 ">
+                <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-style2">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Marcas
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Pc
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Laptop
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Accesorios
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Otros
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+<!--video background-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <div class="fullscreen-bg">
+                        <video loop muted autoplay class="fullscreen-bg__video">
+                            <source src="vid/Pp_Bg.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <h1 class="h1-1"> Gamerholics</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <h3 class="h2-1">Tu pagina de noticias gamers y mas.
-                </div>
-            </div>
         </div>
-    </header>
-    <!--Sction 1-->
-    <section class="sect_style">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 offset-md-2">
-                    <img class="img_sec1" src="img/continium.jpg"></img>
-                </div>
-                <div class="col-md-8">
-                    <p class="p_sec1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id pellentesque justo, nec condimentum
-                        mi. Suspendisse elementum lectus a lectus bibendum, sit amet vulputate enim condimentum. Etiam euismod
-                        dui nisl, vel lobortis leo varius ac. Fusce molestie ligula sed ipsum tempor, eget congue magna rhoncus.
-                        In ac accumsan ante. Nunc sem nunc, cursus a ipsum porttitor, egestas dapibus ipsum. Pellentesque
-                        eu placerat erat. Suspendisse vel tortor velit. In hendrerit tristique tempus. Proin est libero,
-                        suscipit ac pharetra et, iaculis vel massa. Phasellus a ultricies orci. Nam elementum, turpis vel
-                        mattis dignissim, dolor magna convallis erat, a accumsan dolor enim vel erat. Aliquam sodales, nulla
-                        a elementum malesuada, est diam auctor libero, ac rhoncus tellus ligula at ante. Proin ipsum justo,
-                        pharetra quis luctus quis, vehicula ut neque. Aliquam iaculis rutrum quam a suscipit.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 offset-md-2">
-                    <img class="img_sec1" src="img/penta.jpg"></img>
-                </div>
-                <div class="col-md-8">
-                    <p class="p_sec1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id pellentesque justo, nec condimentum
-                        mi. Suspendisse elementum lectus a lectus bibendum, sit amet vulputate enim condimentum. Etiam euismod
-                        dui nisl, vel lobortis leo varius ac. Fusce molestie ligula sed ipsum tempor, eget congue magna rhoncus.
-                        In ac accumsan ante. Nunc sem nunc, cursus a ipsum porttitor, egestas dapibus ipsum. Pellentesque
-                        eu placerat erat. Suspendisse vel tortor velit. In hendrerit tristique tempus. Proin est libero,
-                        suscipit ac pharetra et, iaculis vel massa. Phasellus a ultricies orci. Nam elementum, turpis vel
-                        mattis dignissim, dolor magna convallis erat, a accumsan dolor enim vel erat. Aliquam sodales, nulla
-                        a elementum malesuada, est diam auctor libero, ac rhoncus tellus ligula at ante. Proin ipsum justo,
-                        pharetra quis luctus quis, vehicula ut neque. Aliquam iaculis rutrum quam a suscipit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Sction 2-->
+    </div>
+    <!--Carrusel-->
     <section class="sect_style">
         <div id="myCarousel" class="carousel slide bg-inverse" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -176,24 +203,21 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block img-fluid ml-auto mr-auto img_carousel" src="img/R6_invit.png" alt="First slide"></img>
+                    <img class="d-block img-fluid ml-auto mr-auto img_carousel" src="img/corsair_gamingmouse.jpg" alt="First slide"></img>
                     <div class="carousel-caption">
-                        <h3>Invitational of R6</h3>
-                        <p>Enter here to see the invitational of the last year.</p>
+                        <h3 class="h2-2">Gaming Mouse</h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid ml-auto mr-auto img_carousel" src="img/R6_go4.jpg" alt="Second slide"></img>
+                    <img class="d-block img-fluid ml-auto mr-auto img_carousel" src="img/corsair_keyboard.jpg" alt="Second slide"></img>
                     <div class="carousel-caption">
-                        <h3>Go4 of R6</h3>
-                        <p>See the latest ranking and winners of the weekly and monthly Tournaments</p>
+                        <h3 class="h2-2">Key Board</h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid ml-auto mr-auto img_carousel" src="img/R6_top5.jpg" alt="Third slide"></img>
+                    <img class="d-block img-fluid ml-auto mr-auto img_carousel" src="img/corsair_mousepad.png" alt="Third slide"></img>
                     <div class="carousel-caption">
-                        <h3>Top 5 plays of the week</h3>
-                        <p>Click here to see the best of the best plays in tournaments of the last week</p>
+                        <h3 class="h2-2">Mouse Pad</h3>
                     </div>
                 </div>
             </div>
@@ -207,127 +231,45 @@
                 </a>
         </div>
     </section>
-    <!--GRAFICA DE BARRAS
+    <!--Section 2-->
     <section>
-        <svg width="960" height="500"></svg>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script>
-            var data = d3.range(1000).map(d3.randomBates(10));
-
-            var formatCount = d3.format(",.0f");
-
-            var svg = d3.select("svg"),
-                margin = { top: 10, right: 30, bottom: 30, left: 30 },
-                width = +svg.attr("width") - margin.left - margin.right,
-                height = +svg.attr("height") - margin.top - margin.bottom,
-                g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-            var x = d3.scaleLinear()
-                .rangeRound([0, width]);
-
-            var bins = d3.histogram()
-                .domain(x.domain())
-                .thresholds(x.ticks(20))
-                (data);
-
-            var y = d3.scaleLinear()
-                .domain([0, d3.max(bins, function (d) { return d.length; })])
-                .range([height, 0]);
-
-            var bar = g.selectAll(".bar")
-                .data(bins)
-                .enter().append("g")
-                .attr("class", "bar")
-                .attr("transform", function (d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
-
-            bar.append("rect")
-                .attr("x", 1)
-                .attr("width", x(bins[0].x1) - x(bins[0].x0) - 1)
-                .attr("height", function (d) { return height - y(d.length); });
-
-            bar.append("text")
-                .attr("dy", ".75em")
-                .attr("y", 6)
-                .attr("x", (x(bins[0].x1) - x(bins[0].x0)) / 2)
-                .attr("text-anchor", "middle")
-                .text(function (d) { return formatCount(d.length); });
-
-            g.append("g")
-                .attr("class", "axis axis--x")
-                .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x));
-
-        </script>
-    </section>-->
-    <!--Sction 2-->
-    <section class="sc2-background">
         <div class="container">
-            <div class="row fin-color">
+            <div class="row">
                 <div class="col-md-3">
-                    <h3 class="h3-title">Juegos</h3>
-                    <ul>
-                        <li><a class="as2-color" href="/battlefield/">Battlefield</a></li>
-                        <!--como citar otra pagina-->
-                        <li>Battlerite</li>
-                        <li>Clash Royale</li>
-                        <li>Counter-Strike</li>
-                        <li>Dawn of War</li>
-                        <li>Destiny</li>
-                        <li>Dota 2</li>
-                        <li>For Honor</li>
-                        <li>GTA V</li>
-                        <li>Hearthstone</li>
-                        <li>Heroes of the Storm</li>
-                        <li>Injustice</li>
-                        <li>League of Legends</li>
-                        <li>Mario Kart 8</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-responsive img-st-1" src="img/astro_headset.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>sdkjfhasjhdfijausahdfi uahidsfdsau fiuashdfiuahsd ifuhasidu fhaisudhfiu</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <ul class="mrg-juegos">
-                        <li>Overwatch</li>
-                        <li>Paladins</li>
-                        <li>Rainbow Six: Siege</li>
-                        <li>Rocket League</li>
-                        <li>SMITE</li>
-                        <li>StarCraft II</li>
-                        <li>Super Smash Bros</li>
-                        <li>The Elder Scrolls</li>
-                        <li>Total War: Rome 2</li>
-                        <li>Total War: Warhammer</li>
-                        <li>Unreal Tournament</li>
-                        <li>World of Tanks</li>
-                    </ul>
+                <div class="col-md-3 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-responsive img-st-1" src="img/razer_quickkeys.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"> 
+                            <p>sdkjfhasj hdfijausahdfiua hidsfdsaufiu ashdf iuahsdifu hasidufha isud hfiu</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <h4 class="h3-title">Regions</h4>
-                    <ul>
-                        <li>Global</li>
-                        <li>America</li>
-                        <li>Asia</li>
-                        <li>Latin America</li>
-                        <li>United Kingdom</li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h4 class="h3-title">Social</h4>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Steam</li>
-                        <li>Twitch</li>
-                        <li>Twitter</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="h3-title">About us</h5>
-                    <ul>
-                        <li>Anticheats</li>
-                        <li>Career</li>
-                        <li>Media</li>
-                        <li>Commentaries</li>
-                        <li>Donations</li>
-                    </ul>
+                <div class="col-md-3 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-responsive img-st-1" src="img/nvidia_gtx1080.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>sdkj fhasjhdfijausah dfiua hidsfds aufi uashdfi uahsdifuhasid ufhais udhfiu</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -410,7 +352,7 @@
                                             <div class='input-group date' id='datetimepicker5'>
                                                 <input type='text' class="form-control" />
                                                 <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    <span class="glyphicon glyphicon-calendar"></span>
                                                 </span>
                                             </div>
                                         </div>
@@ -439,7 +381,6 @@
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

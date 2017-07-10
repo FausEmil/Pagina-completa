@@ -4,7 +4,10 @@ html,body{
 .navbar-style{
     color: #ffffff;
     background:#2A3E64;
-
+}
+.navbar-style2{
+    color: #ffffff;
+    background:orange;
 }
 .navbar-light .navbar-nav .nav-link {
     color:#ffffff;
@@ -56,6 +59,13 @@ html,body{
                 1px 0 black,
                 0 1px black,
                 0 -1px black;
+}
+.h2-2{
+    color: black;
+    text-shadow: -1px 0 white,
+                1px 0 white,
+                0 1px white,
+                0 -1px white;
 }
 .img_carousel{
     height: 500px;

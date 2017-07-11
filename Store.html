@@ -107,12 +107,12 @@
         <div class="row">
             <div class="col-md-12 ">
                 <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-style2">
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1"
+                        aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown1">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -235,8 +235,8 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <a href="astro_headset.html" class="component" name="Astro Headset">
+                <div class="col-md-3 component" name="Astro Headset">
+                    <a href="astro_headset.html">
                         <div class="row">
                             <div class="col-md-12">
                                 <img class="img-responsive img-st-1" src="img/astro_headset.png"></img>
@@ -249,8 +249,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 offset-md-1">
-                    <a href="razer_quickkeys.html" class="component" name="Razer Quick Keys">
+                <div class="col-md-3 offset-md-1 component" name="Razer Quick Keys">
+                    <a href="razer_quickkeys.html">
                         <div class="row">
                             <div class="col-md-12">
                                 <img class="img-responsive img-st-1" src="img/razer_quickkeys.png"></img>
@@ -263,8 +263,8 @@
                         </div>  
                     </a>
                 </div>
-                <div class="col-md-3 offset-md-1">
-                    <a href="nvidia_gtx1080.html" class="component" name="Nvidia GTX 1080">
+                <div class="col-md-3 offset-md-1 component" name="Nvidia GTX 1080">
+                    <a href="nvidia_gtx1080.html">
                         <div class="row">
                             <div class="col-md-12">
                                 <img class="img-responsive img-st-1" src="img/nvidia_gtx1080.png"></img>
@@ -394,6 +394,7 @@
         function search_components(){
             var text = $("#Search").val();
             if(text.length > 2){
+                    $("#myCarousel").addClass("hidden");
                     $(".component").each(function(index){
                         if($(this).attr("name").toLowerCase() == text.toLowerCase() ||$(this).attr("name").toLowerCase().search( text.toLowerCase()) >- 1){
                             $(this).removeClass("hidden");
@@ -402,6 +403,7 @@
                         }
                 });
             }else{
+                $("#myCarousel").removeClass("hidden");
                 $(".component").each(function(index){
                     $(this).removeClass("hidden");
                 });

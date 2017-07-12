@@ -5,6 +5,7 @@
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style_tournaments.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -58,7 +59,7 @@
     </script>   
     <!--navbar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-style">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,7 +72,7 @@
                             <a class="nav-link" href="tournaments.html">Tournaments<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Streams</a>
+                            <a class="nav-link" href="streams.html">Streams</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Store.html">Store</a>
@@ -101,6 +102,20 @@
             </div>
         </div>
     </nav>
+    <!--video background-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <div class="fullscreen-bg">
+                        <video loop muted autoplay class="fullscreen-bg__video">
+                            <source src="vid/Pp_Bg.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Este es el modal para sign in-->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

@@ -140,3 +140,9 @@ html,body{
 .ft-mrg-top{
     margin-top: 100px;
 }
+@media only screen and (max-width: 500px){
+    .abcd{
+        visibility: hidden;
+        display: none;
+    }
+}

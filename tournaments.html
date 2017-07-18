@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -56,7 +56,8 @@
                 }
             });
         }
-    </script>   
+    </script>
+
     <!--navbar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-style">
         <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -68,8 +69,8 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="tournaments.html">Tournaments<span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tournaments.html">Tournaments</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="streams.html">Streams</a>
@@ -102,6 +103,55 @@
             </div>
         </div>
     </nav>
+    <!--section 1-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="d-block img-fluid ml-auto mr-auto" src="img/ow_logo.jpg"></img>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Torneo de Overwatch</p>
+                            <table class="table-format">
+                                <tr>
+                                    <th>Area</th>
+                                    <th>Tipo</th>
+                                    <th>Horario</th>
+                                    <th>Numero de equipos inscritos</th>
+                                </tr>
+                                <tr>
+                                    <td>Mexico</td>
+                                    <td>Eliminacion directa (randm)</td>
+                                    <td>20 jul 2017, 19:00 GMT-5</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td>Norte America</td>
+                                    <td>Grupos y llaves</td>
+                                    <td>20 jul 2017, 19:00 GMT-5</td>
+                                    <td>48</td>
+                                </tr>
+                                <tr>
+                                    <td>Sur America</td>
+                                    <td>Grupos y llaves</td>
+                                    <td>20 jul 2017, 19:00 GMT-5</td>
+                                    <td>54</td>
+                                </tr>
+                                <tr>
+                                    <td>Brazil</td>
+                                    <td>Grupos y llaves</td>
+                                    <td>20 jul 2017, 19:00 GMT-5</td>
+                                    <td>34</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--video background-->
     <div class="row">
         <div class="col-md-12">
@@ -150,6 +200,53 @@
             </div>
         </div>
     </div>
+
+    <!--shaking text
+    <script>
+        var ie = document.all ? 1 : 0
+        var ns6 = document.getElementById && !document.all ? 1 : 0
+        var ns4 = document.layers ? 1 : 0
+        var posleft = 1
+        var idoftrembleobject = "trembletext"
+        var trembleobject
+
+        function starttremble() {
+            if (ie || ns4 || ns6) {
+                if (ie) {
+                    trembleobject = eval("document.all." + idoftrembleobject + ".style")
+                }
+                if (ns6) {
+                    trembleobject = idoftrembleobject
+                }
+
+                dotremble()
+            }
+        }
+        function dotremble() {
+            posleft *= -1
+            if (ie) {
+                trembleobject.posLeft += posleft
+            }
+            if (ns6) {
+                var newpos = parseInt(document.getElementById(trembleobject).style.left) + posleft
+                document.getElementById(trembleobject).style.left = newpos
+            }
+            var timer = setTimeout("dotremble()", 20)
+        }
+        onload = starttremble
+    </script>
+    <div id="tremblebox" style="position:relative">
+        <span id="trembletext" style="position:absolute;left:10px;top:30px;">
+<font size=2 color=black face=Verdana>This is your shaking text</font>!
+</span>
+    </div>
+    <br/>
+    <br/>
+    <br/>-->
+    
+
+
+
     <!--Este es el modal para sign up-->
     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -223,6 +320,98 @@
             </div>
         </div>
     </div>
+    <!--Footer-->
+    <footer class="ft-mrg-top">
+        <section class="sc2-background">
+            <div class="container">
+                <div class="row fin-color">
+                    <div class="col-md-3">
+                        <h3 class="h3-title">Juegos</h3>
+                        <ul>
+                            <li><a class="as2-color" href="/battlefield/">Battlefield</a></li>
+                            <!--como citar otra pagina-->
+                            <li>Battlerite</li>
+                            <li>Clash Royale</li>
+                            <li>Counter-Strike</li>
+                            <li>Dawn of War</li>
+                            <li>Destiny</li>
+                            <li>Dota 2</li>
+                            <li>For Honor</li>
+                            <li>GTA V</li>
+                            <li>Hearthstone</li>
+                            <li>Heroes of the Storm</li>
+                            <li>Injustice</li>
+                            <li>League of Legends</li>
+                            <li>Mario Kart 8</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="mrg-juegos">
+                            <li>Overwatch</li>
+                            <li>Paladins</li>
+                            <li>Rainbow Six: Siege</li>
+                            <li>Rocket League</li>
+                            <li>SMITE</li>
+                            <li>StarCraft II</li>
+                            <li>Super Smash Bros</li>
+                            <li>The Elder Scrolls</li>
+                            <li>Total War: Rome 2</li>
+                            <li>Total War: Warhammer</li>
+                            <li>Unreal Tournament</li>
+                            <li>World of Tanks</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4 class="h3-title">Regions</h4>
+                        <ul>
+                            <li>Global</li>
+                            <li>America</li>
+                            <li>Asia</li>
+                            <li>Latin America</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4 class="h3-title">Social</h4>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Steam</li>
+                            <li>Twitch</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="h3-title">About us</h5>
+                        <ul>
+                            <li>Anticheats</li>
+                            <li>Career</li>
+                            <li>Media</li>
+                            <li>Commentaries</li>
+                            <li>Donations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--parte final del footer-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-responsive img-st-1" src="img/r6_medals.png"></img>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-3">
+                    <img class="img-responsive img-st-1 mirror-image" src="img/r6_medals.png"></img>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

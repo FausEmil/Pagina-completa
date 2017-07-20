@@ -1,0 +1,472 @@
+
+<!-- saved from url=(0060)file:///Users/mtdelvalle15/Desktop/proyecto_final/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scales=1.0">
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./index_files/styles.css" rel="stylesheet" media="screen">
+    <script id="facebook-jssdk" src="file://connect.facebook.net/en_US/sdk.js"></script><script src="./index_files/jquery.min.js">
+
+    </script>
+    <link rel="stylesheet" href="./index_files/bootstrap-datetimepicker.min.css">
+    <script src="./index_files/jquery.min(1).js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/moment.min.js"></script>
+    <script src="./index_files/bootstrap-datetimepicker.min.js"></script>
+
+
+
+    <script type="text/javascript" src="./index_files/bootstrap.min(1).js"></script>
+</head>
+
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '445037345852000',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.8'
+            });
+            $(".fb_login").click(function () {
+                FB.login(Facebook_login);
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        function Facebook_login() {
+            FB.getLoginStatus(function (response) {
+                if (reponse.status === "conected") {
+                    window.location = "THE URL TO PROCESS THE LOGIN";
+                }
+            });
+        }
+    </script>
+    <!-- Navbar-->
+    <nav class="navbar navbar-default fondo-negro">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="titulo-navbar letra-amarilla letra-titulo letra-caligrafia alineacion-central">
+                    Gilbet
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Tabs menu principal-->
+    <section>
+        <ul class="nav nav-pills nav-justified margen-pills" id="myTab">
+            <li class=""><a href="file:///Users/mtdelvalle15/Desktop/proyecto_final/index.html#tab_a" data-toggle="pill">Home</a></li>
+            <!-- Pagina Principal con informacion basica-->
+            <li><a href="file:///Users/mtdelvalle15/Desktop/proyecto_final/index.html#tab_b" data-toggle="pill">How Does It Work?</a></li>
+            <!-- Como Funciona-->
+            <li><a href="file:///Users/mtdelvalle15/Desktop/proyecto_final/index.html#tab_c" data-toggle="pill">Games</a></li>
+            <!-- Juegos que participan-->
+            <li class=""><a href="file:///Users/mtdelvalle15/Desktop/proyecto_final/index.html#tab_d" data-toggle="pill">Sign In</a></li>
+            <!-- Cuenta y contraseña-->
+            <li class="active"><a href="file:///Users/mtdelvalle15/Desktop/proyecto_final/index.html#tab_e" data-toggle="pill">Sign Up</a></li>
+            <!-- Inscripcion-->
+        </ul>
+        <!--PRIMERA PAGINA-->
+        <div class="tab-content">
+            <div class="tab-pane" id="tab_a">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="./index_files/circuloamarillo.png" class="img-titulo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Who we are?</div>
+                        </div>
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica
+                        a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
+                        libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
+                        en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s
+                        con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente
+                        con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem
+                        Ipsum.
+                    </div>
+
+                    <!--Primer dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1 ">
+                            <img src="./index_files/circuloamarillo.png" class="img-parrafo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Crew:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Segundo dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1 ">
+                            <img src="./index_files/circuloamarillo.png" class="img-parrafo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Information:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tercer dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1">
+                            <img src="./index_files/circuloamarillo.png" class="img-parrafo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Ubication:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Cuarto dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1">
+                            <img src="./index_files/circuloamarillo.png" class="img-parrafo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Contact us:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--SEGUNDA PAGINA-->
+            <div class="tab-pane" id="tab_b">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="./index_files/circuloamarillo.png" class="img-titulo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Process of Work</div>
+                        </div>
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        1.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        2.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        3.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        4.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        5.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        6.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        7.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        8.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-amarilla letra-titulo-secundario">Prediction</div>
+                    <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que
+                    </div>
+                    <div class="letra-amarilla letra-titulo-secundario">Result</div>
+                    <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que
+                    </div>
+                    <div class="letra-amarilla letra-titulo-secundario">Win or Lose</div>
+                    <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que
+                    </div>
+            </section></div>
+            <!--TERCERA PAGINA-->
+            <div class="tab-pane" id="tab_c">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="./index_files/circuloamarillo.png" class="img-titulo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Games</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/overwatch.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/arma3.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/r6.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/starcraft2.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/battleground.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/dota2.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/smite.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/lol.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/hots.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/paragon.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/gg.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/smash4.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/sf5.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/tekken7.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/injustice2.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/pokken.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/pokemon.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/heartstone.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/magic.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./index_files/gwent.jpg" class="img-juegos">
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--CUARTA PAGINA-->
+            <div class="tab-pane" id="tab_d">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="./index_files/circuloamarillo.png" class="img-titulo">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Sign In</div>
+                        </div>
+                        <form>
+                            <section class="container margen-login">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email Address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                                </fb:login-button>
+                         <section class="margen-selecciones">
+                                <div class="checkbox">
+                                    <label>
+      <input class="letra-blanca" type="checkbox"> Remember Me
+    </label>
+                                </div>
+                         </section>
+                            <a href="file:///Users/mtdelvalle15/Desktop/proyecto_final/yalogeado.html" <button="" type="submit" class="btn btn-default">Log In
+                            </a>
+                        
+                        </section></form>
+                </div></section>
+                </div>
+                <!--QUINTA PAGINA-->
+                <div class="tab-pane active" id="tab_e">
+                    <section class="section_1 margen-der-izq">
+                        <div class="row">
+                            <div class="col-md-1 col-centro">
+                                <img src="./index_files/circuloamarillo.png" class="img-titulo">
+                            </div>
+                            <div class="col-md-11">
+                                <div class="letra-amarilla letra-titulo">Sign Up</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email Address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name(s)</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name(s)">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Last Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">User Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                                <section class="margen-selecciones">
+                                    <div class="row">
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="optradio">Male</label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="optradio">Female</label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="optradio">Other</label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="col-md-11">
+                                    <div class="letra-amarilla letra-titulo-secundario">Birth Date:</div>
+                                </div>
+                                <div class="container">
+                                    <div class="container">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="input-group date" id="datetimepicker">
+                                                    <input type="text" class="form-control">
+                                                    <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-11">
+                                <div class="letra-amarilla letra-titulo-secundario">Region:</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ej;America, Europe, Asia and Africa">
+                            </div>
+                            <div class="col-md-11">
+                                <div class="letra-amarilla letra-titulo-secundario">Forms of Payment:</div>
+                            </div>
+                        </div>
+                        <div class="row margen-imagenes2">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./index_files/paypallogo.png" class="img-juegos2">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./index_files/masterlogo.png" class="img-juegos2">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./index_files/visalogo.png" class="img-juegos2">
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                        </div>
+            <div class="container margen-tarjeta-credito">
+                    <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Credit Card Number">
+                    </div>
+                    <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Expiration Date (Month/Year) Ej. 02(February)/19(Year:2019)">
+                    </div>
+                    <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="CVV Code">
+                    </div>
+                        <label>
+      <input class="letra-blanca" type="checkbox"> Remember Me
+    </label>
+                            <button type="submit" class="btn btn-default">Sign Up</button>
+            </div>
+                    </section>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#datetimepicker').datetimepicker();
+                        FB.getLoginStatus(function (response) {
+                            statusChangeCallback(response);
+                        });
+
+                        function checkLoginState() {
+                            FB.getLoginStatus(function (response) {
+                                statusChangeCallback(response);
+                            });
+                        }
+                    });
+                </script>
+
+
+
+</div></section></body></html>

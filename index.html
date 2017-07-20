@@ -273,7 +273,7 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address or Username</label>
+                            <label for="exampleInputEmail1" id="uname">Email address or Username</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or Username">
                             <small id="emailHelp" class="form-text text-muted">This is not the same as your id.</small>
                         </div>
@@ -285,7 +285,7 @@
                         <fb:login-button scope="public_profile,email" onlogin "checklLoginState();">
                         </fb:login-button>
 
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary" onclick="savedata()">Sign in</button>
                     </form>
 
                 </div>
@@ -458,6 +458,11 @@
             </div>
         </div>
     </footer>
+    <!--<script>
+        function savedata(){
+            $.session.set("userName",$("#uname").val());
+        }
+    </script>-->
 </body>
 
 </html>

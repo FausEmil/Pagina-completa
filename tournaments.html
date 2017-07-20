@@ -103,52 +103,103 @@
             </div>
         </div>
     </nav>
+
     <!--section 1-->
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="d-block img-fluid ml-auto mr-auto" src="img/ow_logo.jpg"></img>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Torneo de Overwatch</p>
-                            <table class="table-format">
-                                <tr>
-                                    <th>Area</th>
-                                    <th>Tipo</th>
-                                    <th>Horario</th>
-                                    <th>Numero de equipos inscritos</th>
-                                </tr>
-                                <tr>
-                                    <td>Mexico</td>
-                                    <td>Eliminacion directa (randm)</td>
-                                    <td>20 jul 2017, 19:00 GMT-5</td>
-                                    <td>27</td>
-                                </tr>
-                                <tr>
-                                    <td>Norte America</td>
-                                    <td>Grupos y llaves</td>
-                                    <td>20 jul 2017, 19:00 GMT-5</td>
-                                    <td>48</td>
-                                </tr>
-                                <tr>
-                                    <td>Sur America</td>
-                                    <td>Grupos y llaves</td>
-                                    <td>20 jul 2017, 19:00 GMT-5</td>
-                                    <td>54</td>
-                                </tr>
-                                <tr>
-                                    <td>Brazil</td>
-                                    <td>Grupos y llaves</td>
-                                    <td>20 jul 2017, 19:00 GMT-5</td>
-                                    <td>34</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+    <section class="container margin-top">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="scroll">
+                    <thead>
+                        <tr>
+                            <th>Juego</th>
+                            <th>Horario</th>
+                            <th>Tipo</th>
+                            <th>Inscritos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/overwatch.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/paragon.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/r6.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/injustice2.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/sf5.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/tekken7.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/heartstone.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/battleground.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/gg.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/pokken.jpg" class="imagengames"></img>
+                            </td>
+                            <td>UT-7:00 (MST)</td>
+                            <td>Clasificatorias</td>
+                            <td>11</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -243,7 +294,7 @@
     <br/>
     <br/>
     <br/>-->
-    
+
 
 
 
@@ -412,6 +463,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            // Change the selector if needed
+            var $table = $('table.scroll'),
+                $bodyCells = $table.find('tbody tr:first').children(),
+                colWidth;
+
+            // Adjust the width of thead cells when window resizes
+            $(window).resize(function () {
+                // Get the tbody columns width array
+                colWidth = $bodyCells.map(function () {
+                    return $(this).width();
+                }).get();
+
+                // Set the width of thead columns
+                $table.find('thead tr').children().each(function (i, v) {
+                    $(v).width(colWidth[i]);
+                });
+            }).resize(); // Trigger resize handler
+        });
+    </script>
 </body>
 
 </html>

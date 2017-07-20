@@ -1,0 +1,155 @@
+html,body{
+    background-color: #232323;
+}
+.letra-caligrafia{
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+.fondo-negro{
+    background: black;
+    border: 2px solid white;
+}
+.alineacion-central{
+    text-align: center
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.letra-amarilla{
+    color: #ffd82d
+}
+.letra-titulo{
+    font-size: 60px
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #c0c0c0;
+    background-color: #444444;
+}
+.nav-pills a {
+    color: black;
+    text-decoration: none;
+    background-color: #aaaaaa;
+}
+/*texto*/
+.letra-blanca {
+    color: white
+}
+.letra-parrafo{
+    font-size: 20px
+}
+/*por si pongo o no video*/
+.section_1{
+ background-color: #232323;
+ padding: 15px;
+ padding-left: 45px;
+ padding-right: 45px;
+}
+.img-titulo{
+    width: 70px;
+    height: 70px;
+}
+.col-centro{
+    text-align: right
+}
+.margen-top{
+    margin-top: 50px
+}
+.img-parrafo{
+    widows: 50px;
+    height: 50px;
+}
+.margen-imagen1{
+width: 70px;
+height: 70px;
+}
+.letra-titulo-secundario{
+    font-size: 40px
+}
+.img-juegos{
+    width: 200px;
+    height: 300px;
+}
+.margen-imagenes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.checkbox label, .radio label {
+    color: white
+}
+label {
+    color: #ffd82d
+}
+.color-face{
+    color: #3b5998
+}
+.margen-login{
+    margin-top: 150px;
+}
+.margen-der-izq{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 70px;   
+}
+.margen-selecciones{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+ .margen-selecciones input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    .margen-selecciones input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffd82d;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+    .margen-pills{
+        margin-top: 0%;
+    }
+    .margen-imagenes2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-juegos2{
+    width: 200px;
+    height: 150px;
+}
+.margen-tarjeta-credito{
+    margin-right: 200px;
+}
+
+.margen-selecciones input[type='checkbox']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffd82d;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+footer{
+    margin-top: 50px;
+}
+

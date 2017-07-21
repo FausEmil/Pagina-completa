@@ -123,8 +123,8 @@
                                     Marcas
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" id="Astro">Astro</a>
+                                    <a class="dropdown-item" id="Todas">Todas</a>
                                     <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </li>
@@ -239,7 +239,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 component" name="Astro Headset">
-                    <a class="as2-color…" href="astro_headset.html">
+                    <a class="as2-color" href="astro_headset.html">
                         <div class="row">
                             <div class="col-md-12">
                                 <img class="img-responsive img-st-1" src="img/astro_headset.png"></img>
@@ -412,7 +412,22 @@
                 });
             }
         }
-            
+    $("#Astro").click(function(event){
+        $(".component").each(function(index){
+            $("#myCarousel").addClass("hidden");
+                        if($(this).attr("name").toLowerCase() == "astro" ||$(this).attr("name").toLowerCase().search( "astro") >- 1){
+                            $(this).removeClass("hidden");
+                        }else{
+                            $(this).addClass("hidden");
+                        }
+                });
+    })
+    $("#Todas").click(function(event){
+        $("#myCarousel").removeClass("hidden");
+                $(".component").each(function(index){
+                    $(this).removeClass("hidden");
+                });
+    })   
     </script>
     <!--Footer-->
     <footer class="ft-mrg-top">
